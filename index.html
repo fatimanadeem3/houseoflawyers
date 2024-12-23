@@ -27,14 +27,14 @@
         }
         
         header img {
-            height: 40%;
+            height: 30%;
             max-width: 50%; /* Adjust to fit smaller screens */
         }
         
         nav {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     flex-direction: row; /* Ensure buttons are in a row */
     flex-wrap: nowrap; /* Prevent wrapping */
     overflow-x: auto; /* Allow horizontal scrolling if needed */
@@ -42,10 +42,9 @@
         
         nav a {
             text-decoration: none;
-            margin: 0 15px;
             color: white;
             transition: background-color 0.3s, font-size 0.3s;
-            padding: 0.5em 1em;
+            padding: 0.5em 0.8em;
             background-color: black;
             border-radius: 3px;
             font-size: 1em;
@@ -113,12 +112,12 @@
 
             nav {
                 flex-direction: column; /* Stack navigation buttons */
-                gap: 5px;
+                gap: 10px;
             }
 
             nav a {
                 font-size: 0.9em;
-                padding: 0.2em 0.4em;
+                padding: 0.1em 0.2em;
             }
 
             section h2 {
@@ -132,14 +131,14 @@
             }
         }
         
-        @media (max-width: 480px) {
+        @media (max-width: 250px) {
             header img {
-                width: 100%; /* Ensure logo scales properly */
+                width: 50%; /* Ensure logo scales properly */
             }
 
             nav a {
                 font-size: 0.8em;
-                padding: 0.1em 0.3em;
+                padding: 0.1em 0.2em;
             }
 
             section {

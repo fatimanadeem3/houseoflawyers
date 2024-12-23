@@ -27,17 +27,18 @@
         }
         
         header img {
-            height: auto;
-            max-width: 100%; /* Adjust to fit smaller screens */
+            height: 40%;
+            max-width: 50%; /* Adjust to fit smaller screens */
         }
         
         nav {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
-            margin: 20px 0;
-        }
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row; /* Ensure buttons are in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
         
         nav a {
             text-decoration: none;

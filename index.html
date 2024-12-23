@@ -6,172 +6,150 @@
     <title>House of Lawyers</title>
     <style>
         body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: url('backp.png') fixed center center; /* 'fixed' ensures it moves with scrolling */
-        background-size: cover; /* Ensures the background image covers the entire viewport */
-        color: black;
-        line-height: 1.6;
-    }
-    
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('backp.png') fixed center center;
+            background-size: cover;
+            color: black;
+            line-height: 1.6;
+        }
+        
         header {
             text-align: center;
             padding: 30px;
             background: rgba(255, 255, 255, 0.7);
         }
-    
+        
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-    
+        
+        header img {
+            height: 100;
+            max-width: 25%; /* Adjust to fit smaller screens */
+        }
+        
         nav {
             display: flex;
             justify-content: center;
             gap: 10px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
             margin: 20px 0;
-            flex-wrap: wrap; /* Ensure buttons wrap to the next line if needed */
         }
-    
-        header img {
-            height: 100%; /* Adjust the height as needed */
-            width: 25%;  /* Maintain the aspect ratio */
-        }
-    
+        
         nav a {
             text-decoration: none;
             color: white;
             transition: background-color 0.3s, font-size 0.3s;
-            padding: 0.5em 1em; /* Use relative units for padding */
+            padding: 0.5em 1em;
             background-color: black;
             border-radius: 5px;
-            font-size: 1em; /* Relative font size for scalability */
+            font-size: 1em;
         }
-    
+        
         nav a:hover {
             background-color: darkgray;
         }
-    
+        
         section {
-            padding: 0; /* Remove extra padding */
+            padding: 20px;
             margin: 20px auto;
             width: 90%;
             max-width: 1200px;
-            background: transparent; /* Remove background */
-            border-radius: 0; /* Remove rounded corners */
-            border: none; /* Remove any border */
+            background: transparent;
         }
-    
+        
         section h2 {
             color: black;
             font-size: 1.8em;
             padding-bottom: 5px;
             border-bottom: 2px solid black;
         }
-    
+        
         p {
-            text-align: justify; /* Aligns the text for a clean, justified look */
-            margin: 20px; /* Adds some space around the paragraph */
-            line-height: 1.6; /* Improves readability with proper line spacing */
+            text-align: justify;
+            margin: 20px;
+            line-height: 1.6;
         }
-    
+        
         ul {
             margin: 10px 0;
             padding-left: 20px;
         }
-    
+        
         ul li {
             margin: 5px 0;
         }
-    
+        
         footer {
             text-align: center;
             padding: 10px;
             background: rgba(255, 255, 255, 0.7);
             margin-top: 20px;
         }
-    
+        
         .contact-info {
             list-style: none;
             padding: 0;
         }
-    
+        
         .contact-info li {
             margin: 5px 0;
         }
-    
+        
         /* Responsive Adjustments */
         @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
             nav {
-                flex-direction: column; /* Stack the buttons vertically */
-                gap: 5px; /* Adjust spacing between buttons */
+                flex-direction: column; /* Stack navigation buttons */
+                gap: 10px;
             }
-    
+
             nav a {
-                font-size: 0.9em; /* Slightly smaller font size */
-                padding: 0.4em 0.8em; /* Adjust padding for smaller screens */
+                font-size: 0.9em;
+                padding: 0.4em 0.8em;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+                text-align: center;
+            }
+
+            p, ul {
+                padding: 10px;
+                font-size: 0.9em;
             }
         }
-    
+        
         @media (max-width: 480px) {
+            header img {
+                width: 100%; /* Ensure logo scales properly */
+            }
+
             nav a {
-                font-size: 0.8em; /* Smaller font size for very small screens */
-                padding: 0.3em 0.6em; /* Compact padding */
+                font-size: 0.8em;
+                padding: 0.3em 0.6em;
+            }
+
+            section {
+                margin: 10px auto;
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 0.8em;
+                padding: 5px;
             }
         }
-        /* Mobile-Friendly Adjustments */
-@media (max-width: 768px) {
-    header {
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 1.8em; /* Reduce header font size for smaller screens */
-    }
-
-    nav {
-        flex-direction: column; /* Stack navigation buttons vertically */
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 0.9em; /* Adjust button text size for medium screens */
-        padding: 0.4em 0.8em; /* Compact padding */
-    }
-
-    section h2 {
-        font-size: 1.5em; /* Reduce section heading size */
-        text-align: center; /* Center-align section headings */
-    }
-
-    p, ul {
-        padding: 10px; /* Add spacing for comfortable reading */
-        font-size: 0.9em; /* Adjust paragraph and list text size */
-    }
-}
-
-@media (max-width: 480px) {
-    header img {
-        height: auto;
-        width: 100%; /* Ensure logo scales to screen width */
-    }
-
-    nav a {
-        font-size: 0.8em; /* Reduce button text size for smaller screens */
-        padding: 0.3em 0.6em; /* Compact padding for smaller buttons */
-    }
-
-    section {
-        margin: 10px auto;
-        padding: 10px; /* Add compact spacing around sections */
-    }
-
-    footer {
-        font-size: 0.8em; /* Adjust footer text size */
-        padding: 5px;
-    }
-}
 
     </style>
     

@@ -5,153 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House of Lawyers</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('backp.png') fixed center center;
-            background-size: cover;
-            color: black;
-            line-height: 1.6;
-        }
-        
-        header {
-            text-align: center;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.7);
-        }
-        
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        
-        header img {
-            height: 40%;
-            max-width: 50%; /* Adjust to fit smaller screens */
-        }
-        
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-direction: row; /* Keep buttons in a row */
-            flex-wrap: nowrap; /* Prevent wrapping */
-            overflow-x: auto; /* Allow horizontal scrolling if needed */
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: white;
-            transition: background-color 0.3s, font-size 0.3s;
-            padding: 0.5em 0.8em;
-            background-color: black;
-            border-radius: 1px;
-            font-size: 1em;
-        }
-        
-        nav a:hover {
-            background-color: darkgray;
-        }
-        
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            width: 90%;
-            max-width: 1200px;
-            background: transparent;
-        }
-        
-        section h2 {
-            color: black;
-            font-size: 1.8em;
-            padding-bottom: 5px;
-            border-bottom: 2px solid black;
-        }
-        
-        p {
-            text-align: justify;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        
-        ul li {
-            margin: 5px 0;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.7);
-            margin-top: 20px;
-        }
-        
-        .contact-info {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .contact-info li {
-            margin: 5px 0;
-        }
-        
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            header {
-                padding: 15px;
-            }
+        body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background: url('backp.png') fixed center center;  
+    background-size: cover;  
+    color: black;  
+    line-height: 1.6;  
+}  
 
-            header h1 {
-                font-size: 1.8em;
-            }
+header {  
+    text-align: center;  
+    padding: 30px;  
+    background: rgba(255, 255, 255, 0.7);  
+}  
 
-            nav {
-                flex-direction: column; /* Stack navigation buttons */
-                gap: 10px;
-            }
+header h1 {  
+    margin: 0;  
+    font-size: 2.5em;  
+}  
 
-            nav a {
-                font-size: 1em;
-                padding: 0.1em 0.2em;
-            }
+header img {  
+    height: auto; /* Maintain aspect ratio */  
+    max-width: 50%; /* Adjust to fit smaller screens */  
+}  
 
-            section h2 {
-                font-size: 1.5em;
-                text-align: center;
-            }
+nav {  
+    display: flex;  
+    justify-content: center; /* Centers the buttons */  
+    gap: 10px; /* Space between buttons */  
+    flex-direction: row; /* Keeps buttons in a row */  
+    flex-wrap: nowrap; /* Prevents wrapping */  
+    overflow-x: auto; /* Allows horizontal scrolling if needed */  
+}  
 
-            p, ul {
-                padding: 10px;
-                font-size: 0.9em;
-            }
-        }
-        
-        @media (max-width: 250px) {
-            header img {
-                width: 25%; /* Ensure logo scales properly */
-            }
+nav a {  
+    text-decoration: none;  
+    color: white;  
+    transition: background-color 0.3s, font-size 0.3s;  
+    padding: 0.5em 0.8em;  
+    background-color: black;  
+    border-radius: 1px;  
+    font-size: 1em;  
+    white-space: nowrap; /* Prevents text wrapping in buttons */  
+}  
 
-            nav a {
-                font-size: 1em;
-                padding: 0.1em 0.2em;
-            }
+nav a:hover {  
+    background-color: darkgray;  
+}  
 
-            section {
-                margin: 10px auto;
-                padding: 10px;
-            }
+section {  
+    padding: 20px;  
+    margin: 20px auto;  
+    width: 90%;  
+    max-width: 1200px;  
+    background: transparent;  
+}  
 
-            footer {
-                font-size: 0.8em;
-                padding: 5px;
-            }
-        }
+section h2 {  
+    color: black;  
+    font-size: 1.8em;  
+    padding-bottom: 5px;  
+    border-bottom: 2px solid black;  
+}  
 
+p {  
+    text-align: justify;  
+    margin: 20px 0; /* Updated margin for better spacing */  
+    line-height: 1.6;  
+}  
+
+ul {  
+    margin: 10px 0;  
+    padding-left: 20px;  
+}  
+
+ul li {  
+    margin: 5px 0;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 10px;  
+    background: rgba(255, 255, 255, 0.7);  
+    margin-top: 20px;  
+}  
+
+.contact-info {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+.contact-info li {  
+    margin: 5px 0;  
+}  
+
+/* Responsive Adjustments */  
+@media (max-width: 768px) {  
+    header {  
+        padding: 15px;  
+    }  
+
+    header h1 {  
+        font-size: 1.8em;  
+    }  
+
+    nav {  
+        flex-direction: column; /* Stack navigation buttons */  
+        gap: 10px; /* Vertical spacing between buttons */  
+    }  
+
+    nav a {  
+        font-size: 1em;  
+        padding: 0.5em; /* Increase click area */  
+        width: 100%; /* Full-width buttons for easier tapping */  
+        text-align: center; /* Center text */  
+    }  
+
+    section h2 {  
+        font-size: 1.5em;  
+        text-align: center;  
+    }  
+
+    p, ul {  
+        padding: 10px;  
+        font-size: 0.9em;  
+    }  
+}  
+
+@media (max-width: 250px) {  
+    header img {  
+        width: 50%; /* Scale logo properly */
+        max-height: 50px;   
+    }  
+
+    nav a {  
+        font-size: 1em;  
+        padding: 0.5em; /* Ensure sufficient padding on small screens */  
+    }  
+
+    section {  
+        margin: 10px auto;  
+        padding: 10px;  
+    }  
+
+    footer {  
+        font-size: 0.8em;  
+        padding: 5px;  
+    }  
+}
     </style>
     
 </head>
